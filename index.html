@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tundra & Taiga Explorer</title>
+<meta name="description" content="Explore northern pastoralists and cold-adapted animals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader">
+  <div class="loader-orb"><span></span></div>
+  <p>ENTERING THE NORTH</p>
+</div>
+
+<div class="cursor-glow"></div>
+<div class="snow"></div>
+<div class="aurora a1"></div><div class="aurora a2"></div>
+
+<div class="progress"><span id="progress"></span></div>
+
+<header class="topbar" id="topbar">
+  <div class="line"></div>
+  <img src="assets/image2.png" class="mountain" alt="">
+  <a class="brand" href="#home">TUNDRA AND TAIGA<br>EXPLORER</a>
+  <img src="assets/image2.png" class="mountain flip" alt="">
+  <div class="line"></div>
+</header>
+
+<nav class="nav">
+  <a href="#home">HOME</a>
+  <a href="#pastoralists">PEOPLE</a>
+  <a href="#animals">ANIMALS</a>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">WELCOME!</p>
+    <div class="title-wrap">
+      <span class="title-line"></span>
+      <h1>BURES BOAHTIN!</h1>
+      <span class="title-line"></span>
+    </div>
+    <p class="hero-sub">A journey through the people, animals and landscapes of the far north.</p>
+    <a class="start-btn magnetic" href="#pastoralists">
+      <span class="play">▶</span>
+      <span>START<br>JOURNEY</span>
+    </a>
+  </div>
+  <div class="scroll-cue"><span></span><small>SCROLL TO EXPLORE</small></div>
+</section>
+
+<section id="pastoralists" class="section people">
+  <div class="section-bg"></div>
+  <div class="glass info-panel reveal">
+    <div class="copy">
+      <p class="kicker">01 · THE PEOPLE</p>
+      <h2>PASTORALISTS</h2>
+      <div class="rule"></div>
+      <h3>WHO ARE THE PASTORALISTS?</h3>
+      <p>Pastoralists are people who depend partly or largely on herding and raising animals for their livelihood. In the cold northern regions, communities have adapted their way of life to the harsh climate and seasonal changes.</p>
+      <h3>WHERE DO THEY LIVE?</h3>
+      <p>Pastoral communities live across parts of the Arctic tundra, forest-tundra and taiga of northern Eurasia and North America.</p>
+      <h3>HOW DO THEY SURVIVE THE COLD?</h3>
+      <p>Pastoralists move or manage their herds according to seasonal conditions and available food, using animals that are adapted to extreme cold.</p>
+    </div>
+    <div class="portrait">
+      <div class="portrait-ring"></div>
+      <img src="assets/image6.png" alt="Northern pastoralists">
+      <span class="image-label">LIFE IN THE NORTH</span>
+    </div>
+  </div>
+</section>
+
+<section id="animals" class="animals section">
+  <div class="section-heading reveal">
+    <p class="kicker">03 · COLD-ADAPTED ANIMALS</p>
+    <h2>MEET THE ANIMALS</h2>
+    <p>Explore each animal through a clear photograph and an interactive field-guide entry.</p>
+  </div>
+
+  <div class="animal-grid">
+    <article class="animal-card reveal" data-animal="caribou">
+      <div class="animal-image"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Caribou.jpg" alt="Caribou"></div>
+      <div class="animal-overlay"></div>
+      <div class="animal-tag">ARCTIC TUNDRA</div>
+      <div class="animal-short"><h3>CARIBOU</h3><p>Herding · Transport · Survival</p><button>EXPLORE →</button></div>
+    </article>
+
+    <article class="animal-card reveal" data-animal="horse">
+      <div class="animal-image"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/A_Yakutian_horse_%289762345674%29.jpg" alt="Yakutian horse"></div>
+      <div class="animal-overlay"></div>
+      <div class="animal-tag">YAKUTIA · TAIGA</div>
+      <div class="animal-short"><h3>YAKUTIAN HORSE</h3><p>Riding · Transport · Agriculture</p><button>EXPLORE →</button></div>
+    </article>
+
+    <article class="animal-card reveal" data-animal="cattle">
+      <div class="animal-image"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Yakutian_Cattle_01_-_Head-on.jpeg" alt="Yakutian cattle"></div>
+      <div class="animal-overlay"></div>
+      <div class="animal-tag">YAKUTIA · TAIGA</div>
+      <div class="animal-short"><h3>YAKUTIAN CATTLE</h3><p>Dairy · Meat · Livelihood</p><button>EXPLORE →</button></div>
+    </article>
+
+    <article class="animal-card reveal" data-animal="muskox">
+      <div class="animal-image"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Muskox.jpg" alt="Musk ox"></div>
+      <div class="animal-overlay"></div>
+      <div class="animal-tag">ARCTIC TUNDRA</div>
+      <div class="animal-short"><h3>MUSK OX</h3><p>Wool · Meat · Hides</p><button>EXPLORE →</button></div>
+    </article>
+
+    <article class="animal-card wide reveal" data-animal="sleddog">
+      <div class="animal-image"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Denali_Sled_Dog.jpg" alt="Northern sled dogs"></div>
+      <div class="animal-overlay"></div>
+      <div class="animal-tag">ARCTIC & SUBARCTIC</div>
+      <div class="animal-short"><h3>NORTHERN SLED DOG</h3><p>Sled pulling · Carrying loads · Travel</p><button>EXPLORE →</button></div>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><b>TUNDRA & TAIGA EXPLORER</b><span>AN INTERACTIVE NORTHERN FIELD GUIDE · ANIMAL PHOTOS: WIKIMEDIA COMMONS</span></div>
+  <a href="#home">↑ RETURN TO BASE</a>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-backdrop"></div>
+  <div class="modal-card">
+    <button class="close" aria-label="Close">×</button>
+    <div class="modal-image"><img id="modalImg" src="" alt=""></div>
+    <div class="modal-info">
+      <p class="kicker" id="modalHabitat"></p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-uses" id="modalUses"></div>
+      <div class="modal-stats" id="modalStats"></div>
+      <div class="fun" id="modalFun"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
